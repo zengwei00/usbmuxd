@@ -1,3 +1,12 @@
+usbmuxd (1.1.1-2+deb11u1) bullseye-security; urgency=high
+
+  * Non-maintainer upload by the LTS team.
+  * CVE-2025-66004: priv escalation via path traversal issue
+    - debian/patches/CVE-2025-66004.patch: make sure to sanitize input for
+      SavePairRecord command in src/conf.c.
+
+ -- Utkarsh Gupta <utkarsh@debian.org>  Fri, 19 Dec 2025 03:42:59 +0530
+
 usbmuxd (1.1.1-2) unstable; urgency=medium
 
   * Upload to unstable
